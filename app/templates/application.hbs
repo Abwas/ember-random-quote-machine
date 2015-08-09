@@ -1,16 +1,15 @@
-<header>
-  <h1>Ember Random Quote Machine</h1>
+{{#md-toolbar classNames='demo-toolbar'}}
+  <div class="md-toolbar-tools">
+    <span>Ember Random Quote Machine</span>
+    <span flex></span>
+    {{#md-button action='showQuotes' layoutType="row" layout-align="center center" style='min-width: 72px;'}}
+      <span>All quotes</span>
+    {{/md-button}}
 
-  <ul>
-    <li>All Quotes</li>
-    <li>Add Quote</li>
-  </ul>
-</header>
+    {{#md-button action='addQuote' layoutType="row" layout-align="center center" style='min-width: 72px;'}}
+      <span>Add quotes</span>
+    {{/md-button}}
+  </div>
+{{/md-toolbar}}
 
 {{outlet}}
-
-<footer>
-  <p>
-    Made with <span class="love">❤</span> by <a href="https://github.com/ericdouglas"></a>Eric Douglas
-  </p>
-</footer>
