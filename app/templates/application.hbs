@@ -1,58 +1,15 @@
-<div class="doc-content" layout="column">
-    <div flex layout="column">
+{{#md-toolbar classNames='demo-toolbar'}}
+  <div class="md-toolbar-tools">
+    <span>Ember Random Quote Machine</span>
+    <span flex></span>
+    {{#md-button action='showQuotes' layoutType="row" layout-align="center center" style='min-width: 72px;'}}
+      <span>All quotes</span>
+    {{/md-button}}
 
-        <section class="demo-container md-whiteframe-z1 {{showSourceClass}}">
+    {{#md-button action='addQuote' layoutType="row" layout-align="center center" style='min-width: 72px;'}}
+      <span>Add quotes</span>
+    {{/md-button}}
+  </div>
+{{/md-toolbar}}
 
-            {{#md-toolbar classNames='demo-toolbar'}}
-                <div class="md-toolbar-tools">
-                    <span>Basic Usage</span>
-                    <span flex></span>
-                    {{#md-button action='showSource' layoutType="row" layout-align="center center" style='min-width: 72px;'}}
-                        {{md-icon md-svg-src='images/icons/ic_visibility_24px.svg' style='margin: 0 4px 0 0;'}}
-                        <span>Source</span>
-                    {{/md-button}}
-                </div>
-            {{/md-toolbar}}
-
-        </section>
-    </div>
-</div>
-
-<md-content>
-
-    <md-card>
-        <img src="images/washedout-3cf136ef7db44091d24e9f0c3d910d7e.png" alt="Washed Out">
-        <md-card-content>
-            <h2 class="md-title">Paracosm</h2>
-
-            <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm
-                share the
-                two most important words in Ernest Greene's musical language: feel it. It's a
-                simple request, as well...
-            </p>
-        </md-card-content>
-        <div class="md-actions" layout="row" layout-align="end center">
-            {{#md-button}}Action 1{{/md-button}}
-            {{#md-button}}Action 2{{/md-button}}
-        </div>
-    </md-card>
-
-</md-content>
-
-<!-- <header> -->
-<!--   <h1>Ember Random Quote Machine</h1> -->
-
-<!--   <ul> -->
-<!--     <li>All Quotes</li> -->
-<!--     <li>Add Quote</li> -->
-<!--   </ul> -->
-<!-- </header> -->
-
-<!-- {{outlet}} -->
-
-<!-- <footer> -->
-<!--   <p> -->
-<!--     Made with <span class="love">❤</span> by <a href="https://github.com/ericdouglas"></a>Eric Douglas -->
-<!--   </p> -->
-<!-- </footer> -->
+{{outlet}}
