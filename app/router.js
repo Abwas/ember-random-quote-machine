@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('quote', { path: '/' });
+  this.route('all');
 });
 
 export default Router;
