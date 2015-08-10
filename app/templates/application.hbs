@@ -1,14 +1,20 @@
 {{#md-toolbar classNames='demo-toolbar'}}
   <div class="md-toolbar-tools">
-    <span>Ember Random Quote Machine</span>
+    {{#link-to 'index'}}
+      <span>Ember Random Quote Machine</span>
+    {{/link-to}}
     <span flex></span>
-    {{#md-button action='showQuotes' layoutType="row" layout-align="center center" style='min-width: 72px;'}}
-      <span>All quotes</span>
-    {{/md-button}}
+    {{#link-to 'all'}}
+      {{#md-button layoutType="row" layout-align="center center" style='min-width: 72px;'}}
+        <span>All quotes</span>
+      {{/md-button}}
+    {{/link-to}}
 
-    {{#md-button action='addQuote' layoutType="row" layout-align="center center" style='min-width: 72px;'}}
-      <span>Add quotes</span>
-    {{/md-button}}
+    {{#link-to 'new'}}
+      {{#md-button layoutType="row" layout-align="center center" style='min-width: 72px;'}}
+        <span>Add quotes</span>
+      {{/md-button}}
+    {{/link-to}}
   </div>
 {{/md-toolbar}}
 

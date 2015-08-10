@@ -1,0 +1,15 @@
+<md-content class="md-padding">
+    {{#md-input-container flex='' value=author}}
+      <label>Author</label>
+      {{md-input}}
+    {{/md-input-container}}
+
+    {{#md-input-container flex='' value=message}}
+      <label>Message</label>
+      {{md-input}}
+    {{/md-input-container}}
+
+    <section layout="row" layout-sm="column" layout-align="center center">
+      {{#md-button action="createQuote" class="md-raised md-primary"}}Create{{/md-button}}
+    </section>
+</md-content>
