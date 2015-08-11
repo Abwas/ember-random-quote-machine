@@ -8,6 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('all');
   this.route('new');
+  this.route('quotes', { path: '/quotes/:quote_id'}, function() {
+    this.route('edit');
+  });
 });
 
 export default Router;
